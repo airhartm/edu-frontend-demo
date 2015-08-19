@@ -79,6 +79,20 @@ html {
     border-color: #cf3d0e;
     cursor: pointer;
 }
+.cases .devices h2 {
+    margin: 2.5rem 0px 2rem;
+    font-weight: 300;
+    font-size: 1.5rem;
+}
+.cases .devices > li {
+    width: 30%;
+    float: left;
+}
+.cases {
+  background-color: white;
+  color: gray;
+}
+.
 /*! normalize.css v3.0.2 | MIT License | git.io/normalize */
 
 /**
