@@ -13,6 +13,9 @@ html {
 /* Navigation Section */
 .top-navigation {
     background-color: #fff;
+    position: fixed;
+    width: 100%;
+    z-index: 9999;
 }
 .content {
     width: 970px;
@@ -79,14 +82,25 @@ html {
     border-color: #cf3d0e;
     cursor: pointer;
 }
-.cases .devices h2 {
+.cases .content h2 {
     margin: 2.5rem 0px 2rem;
     font-weight: 300;
     font-size: 1.5rem;
+    text-align: center;
 }
-.cases .devices > li {
-    width: 30%;
-    float: left;
+.cases .devices {
+    width: 33.3333333%;
+    display: inline-block;
+    /* styles to assist with debugging */
+    border: 1px solid black;
+    box-sizing: border-box;
+    height: 4em;
+    margin-right: -4px;
+}
+.cases .devices .img {
+    margin: 0 auto;
+    float: none;
+
 }
 .cases {
   background-color: white;
@@ -102,7 +116,7 @@ html {
  */
 
 html {
-  font-family: sans-serif; /* 1 */
+  font-family: Roboto, sans-serif; /* 1 */
   -ms-text-size-adjust: 100%; /* 2 */
   -webkit-text-size-adjust: 100%; /* 2 */
 }
