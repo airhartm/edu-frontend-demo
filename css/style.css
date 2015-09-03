@@ -545,6 +545,10 @@ html {
     border-top: 1px solid #eaebec;
     margin: 1.313rem 0;
 }
+.social .icons{
+    padding-left: 0;
+}
+
 .social .icons > li {
     border-radius: 1.25rem;
     width: 2.5rem;
