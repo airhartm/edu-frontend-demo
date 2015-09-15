@@ -451,12 +451,60 @@ body {
   font-size: 2em;
   font-family: "Gentium Book Basic", Georgia, serif;
 }
+/* Navigation Section */
+.top-navigation {
+    position: fixed;
+    width: 100%;
+    z-index: 9999;
+}
+.content {
+    width: 970px;
+    margin: 0 auto;
+    text-align: center;
+}
+.top-navigation > .content {
+    height: 70px;
+}
+.top-navigation .links {
+    color: white;
+    font-size: 16px;
+    float: none;
+    margin: 0 auto;
+    margin-top: 25px;
+    -webkit-font-smoothing: antialiased;
+}
+.top-navigation .links li {
+    display: inline-block;
+    padding-left: 1em;
+    padding-right: 1em;
+    background-color: black;
+}
+.top-navigation .links .active {
+    color: white;
+    font-weight: 500;
+}
+.top-navigation .links li {
+    cursor: pointer;
+}
+.top-navigation a:link, a:visited{
+    color: white;
+    text-decoration: none;
+}
+.top-navigation a:hover {
+   color: gray;
+   text-decoration: none;
+   float: none;
+}
+
 .introduction-section,
 .location-section,
 .questions-section {
     max-width: 38em;
     margin-left: auto;
     margin-right: auto;
+}
+.introduction-section a{
+  color:blue;
 }
 h2 {
   font-size: 1.5em;
@@ -478,6 +526,10 @@ h2 {
 }
 .social a {
     text-decoration: none;
+    font-weight: normal;
+    color: black;
+}
+.social a:hover {
     font-weight: bold;
 }
 
