@@ -445,6 +445,7 @@ body {
   font-weight: bold;
   letter-spacing: -0.02em;
 }
+
 .masthead-intro {
   margin-top: -0.2em;
   color: white;
@@ -453,7 +454,7 @@ body {
 }
 /* Navigation Section */
 .top-navigation {
-    position: fixed;
+
     width: 100%;
     z-index: 9999;
 }
@@ -486,7 +487,7 @@ body {
 .top-navigation .links li {
     cursor: pointer;
 }
-.top-navigation a:link, a:visited{
+.top-navigation a:link, .top-navigation a:visited{
     color: white;
     text-decoration: none;
 }
@@ -494,6 +495,7 @@ body {
    color: gray;
    text-decoration: none;
    float: none;
+
 }
 
 .introduction-section,
@@ -503,9 +505,7 @@ body {
     margin-left: auto;
     margin-right: auto;
 }
-.introduction-section a{
-  color:blue;
-}
+
 h2 {
   font-size: 1.5em;
   color: brown;
