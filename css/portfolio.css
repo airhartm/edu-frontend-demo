@@ -546,8 +546,8 @@ h2 {
 }
 
 .checkbox {
-  float: left;
   background: url('');
+  text-align: left;
 }
 
 #newitem {
@@ -556,14 +556,17 @@ h2 {
 
 #list {
   margin-top: 0;
-  padding: 5px 5px 5px 15px;
+  padding: 5px 5px 5px 1px;
   text-align: left;
-  list-style: ;
-}
-.item {
-  font-size: 1.25em;
   cursor: pointer;
-  list-style-type: square;
-  list-style-position: outside;
-  list-style-image:'';
+  list-style-type: none;
+  float:none;
+}
+
+.item {
+  display:inline;
+  margin-left:1em;
+  margin-top: 0em;
+  padding: 0 0 0 0em;
+  font-size: 1em;
 }
