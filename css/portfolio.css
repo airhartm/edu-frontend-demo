@@ -563,6 +563,9 @@ h2 {
   float:none;
 }
 
+.control {
+  display:inline;  
+}
 .item {
   display:inline;
   margin-left:1em;

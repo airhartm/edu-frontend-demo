@@ -1,52 +1,25 @@
 $(document).ready(function() {
 
-  $('.ryu').mouseenter(function() {
-    $('.ryu-still').hide();
-    $('.ryu-ready').show();
-  })
+//add list items
+  $('#append').click(function(){
+    var txtentry = document.getElementById('task');
+    var txttask = txtentry.value;
+    event.preventDefault();
 
- 	.mouseleave(function() {
-	$('.ryu-ready').hide();
-	$('.ryu-still').show();
-  })
-
-	.mousedown(function() {
-	playHadouken();
- 	$('.ryu-ready').hide();
-	$('.ryu-throwing').show();
-$('.hadouken').finish().show()
-  .animate(
-    {'left': '1020px'},
-    500,
-    function() {
-      $(this).hide();
-      $(this).css('left', '520px');
-    }
-  );
-}); 
- 	.mouseup(function() {
- 	$('.ryu-throwing').hide();
- 	$('.ryu-ready').show();
-  // ryu goes back to his ready position
+    $('<li></li>').appendTo('#list').html('<div class="control"><div class="fa fa-square-o" style="visibility:visible; display:"></div><div class="fa fa-check-square-o" style="visibility:hidden"></div></div><div class="fa fa-minus-square"></div><div class="item">' + txttask + '</div>');
   });
 
-$(document).on('keydown', function(e) {
-    if (e.keyCode === 88) {
- 	$('.ryu-ready').hide();
-	$('.ryu-cool').show();
-    };
-});
-$(document).on('keyup', function(e) {
-    if (e.keyCode === 88) {
- 	$('.ryu-ready').show();
-	$('.ryu-cool').hide();
-    };
-});
+//delete list items
+ $('#list').on('click', '.fa-minus-square', function(e){
+  e.preventDefault();
+    $(this).parent().remove(); 
+  });
 
+//toggle add and remove controls
+ $('rmtask').click(function() {
+    $('ycheck').toggle();
+    $('nocheck').toggle();
+    alert('Did they toggle?');
+}); 
 
 });
-function playHadouken () {
-  $('#hadouken-sound')[0].volume = 0.5;
-  $('#hadouken-sound')[0].load();
-  $('#hadouken-sound')[0].play();
-}
