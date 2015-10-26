@@ -6,7 +6,12 @@ $(document).ready(function() {
     var txttask = txtentry.value;
     event.preventDefault();
 
-    $('<li></li>').appendTo('#list').html('<div class="control"><div class="fa fa-square-o" style="visibility:visible; display:"></div><div class="fa fa-check-square-o" style="visibility:hidden"></div></div><div class="fa fa-minus-square"></div><div class="item">' + txttask + '</div>');
+    $('<li></li>').appendTo('#list').html('<div class="control">' +
+      '<div class="fa fa-square-o nocheck" ></div>' +
+      '<div class="fa fa-check-square-o ycheck" style="display:none"></div>' +
+      '</div>' +
+      '<div class="fa fa-minus-square remove"></div><div class="item">' +
+      txttask + '</div>');
   });
 
 //delete list items
@@ -16,10 +21,13 @@ $(document).ready(function() {
   });
 
 //toggle add and remove controls
- $('rmtask').click(function() {
-    $('ycheck').toggle();
-    $('nocheck').toggle();
-    alert('Did they toggle?');
+ $('#list').on('click', '.nocheck', function(e){
+    $(this).next('.ycheck').toggle();
+    $(this).toggle();
+}); 
+ $('#list').on('click', '.ycheck', function(e){
+    $(this).prev('.nocheck').toggle();
+    $(this).toggle();
 }); 
 
 });

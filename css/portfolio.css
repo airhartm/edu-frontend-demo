@@ -431,7 +431,7 @@ body {
 .masthead {
   margin-bottom: 1em;
   padding: 6em 1em;
-  background-image: url('http://www.mikeology.biz/wp-content/uploads/2015/08/IMG_0348.jpg');
+  background-image: url('../images/IMG_0348.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   border-top: solid 1em #FF6666;
@@ -572,4 +572,12 @@ h2 {
   margin-top: 0em;
   padding: 0 0 0 0em;
   font-size: 1em;
+}
+
+.textIn{
+  padding-left: 3em;
+}
+
+.nocheck, .ycheck {
+  padding-right: 0.5em;
 }
