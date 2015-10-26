@@ -575,9 +575,14 @@ h2 {
 }
 
 .textIn{
-  padding-left: 3em;
+  padding-left: 0em;
 }
 
 .nocheck, .ycheck {
   padding-right: 0.5em;
+}
+
+.fa-plus-square, .button, .input {
+  display:inline;
+  text-align:left;
 }
