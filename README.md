@@ -1,7 +1,7 @@
 # Sample Front-End Project
 
 ## Project Overview
-This project is a sample front-end developed during a certification course around 2014, designed to demonstrate essential design elements in front-end web development. The project showcases the use of embedded fonts, icon and CSS toolkits, and features well-structured HTML and CSS.
+This project is a sample front-end developed during a certification course in 2014, designed to demonstrate essential design elements in front-end web development. The project showcases the use of embedded fonts, icon and CSS toolkits, and features (for that era) well-structured HTML and CSS.
 
 ## Technologies Used
 - **HTML**: Provides the structure and semantic elements.
